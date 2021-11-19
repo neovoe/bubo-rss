@@ -7,8 +7,9 @@
     "https://status.dropbox.com/history.rss"
   ],
   "Product": [
-    "https//sspai.com/feed",
-    "https://buttondown.email/producthacker/rss"
+    "https://sspai.com/feed",
+    "https://buttondown.email/producthacker/rss",
+    "https://rsshub.jova.me/sspai/matrix"
   ],
   "Apple": [
     "https://daringfireball.net/feeds/main",
@@ -17,8 +18,7 @@
     "https://www.macsparky.com/blog?format=rss",
     "https://mjtsai.com/blog/feed/",
     "https://sixcolors.com/feed/",
-    "https://www.macdrifter.com/feeds/rss.xml",
-    "https://rsshub.jova.me/sspai/matrix"
+    "https://www.macdrifter.com/feeds/rss.xml"
   ],
   "Blogs": [
     "https://leancrew.com/all-this/feed/",
