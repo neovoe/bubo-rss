@@ -1,4 +1,38 @@
 {
+  "Notification": [
+    "https://rsshub.jova.me/wechat/tgchannel/neewx2tg",
+    "https://rsshub.app/bendibao/news/nj",
+    "https://rsshub.app/bendibao/news/suqian",
+    "https://rsshub.app/bendibao/news/cz",
+    "https://status.dropbox.com/history.rss"
+  ],
+  "Product": [
+    "https//sspai.com/feed",
+    "https://buttondown.email/producthacker/rss"
+  ],
+  "Apple": [
+    "https://daringfireball.net/feeds/main",
+    "https://www.macstories.net/feed/",
+    "https://feedpress.me/512pixels",
+    "https://www.macsparky.com/blog?format=rss",
+    "https://mjtsai.com/blog/feed/",
+    "https://sixcolors.com/feed/",
+    "https://www.macdrifter.com/feeds/rss.xml",
+    "https://rsshub.jova.me/sspai/matrix"
+  ],
+  "Blogs": [
+    "https://leancrew.com/all-this/feed/",
+    "https://inessential.com/xml/rss.xml",
+    "https://rob.crabapples.net/feed.xml",
+    "https://iam.fahrni.me/feed/json/",
+    "https://begriffs.com/atom.xml",
+    "https://marco.org/rss",
+    "https://furbo.org/feed/",
+    "https://blog.iconfactory.com/feed/",
+    "https://waitbutwhy.com/feed",
+    "https://george.mand.is/feed.xml",
+    "https://joy.recurse.com/feed.atom"
+  ],
   "Web Development": [
     "https://hacks.mozilla.org/feed/",
     "https://blog.mozilla.org/feed/",
@@ -7,18 +41,5 @@
     "https://alistapart.com/main/feed/",
     "https://css-tricks.com/feed/",
     "https://dev.to/feed"
-  ],
-  "Blogs": [
-    "https://george.mand.is/feed.xml",
-    "https://joy.recurse.com/feed.atom"
-  ],
-  "My GitHub Projects": [
-    "https://github.com/georgemandis.atom",
-    "https://github.com/georgemandis/konami-js/releases.atom",
-    "https://github.com/georgemandis/konami-js/commits/main.atom",
-    "https://github.com/javascriptforartists/cheer-me-up-and-sing-me-a-song/commits/master.atom",
-    "https://github.com/georgemandis/circuit-playground-midi-multi-tool/commits/master.atom",
-    "https://github.com/georgemandis/remote-working-list/commits/master.atom",
-    "https://github.com/georgemandis/tweeter-totter/commits/master.atom"
   ]
 }

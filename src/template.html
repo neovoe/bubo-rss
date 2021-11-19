@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>🦉 Bubo Reader</title>
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubo Reader</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json" />
 </head>
 <body>
+<header>
+    <div class="navbar">
+        <div class="content">
+            <div class="site-name">
+                <a href="">🦉 Bubo Reader</a>
+            </div>
+            <div class="description">
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="content">
+        <div class="post-card">
+            {% for group, feeds in data %}
+            <hr class="post-separator"/>
+            <h2>{{ group }}</h2>
+            {% for feed in feeds %}
+            <details>
+                <summary class="post-title">
+                    <a class="feed-title" href="{{ feed.feed }}">{{ feed.title }}</a>
+                </summary>
+                <ul>
+                    {% for item in feed.items %}
+                    <li class="post-content">
+                        {{ item.timestamp | formatDate }} - <a href="{{ item.link }}" target='_blank'
+                                                               rel='noopener norefferer nofollow'>{{ item.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </details>
+            {% endfor %}
+            {% endfor %}
 
-  <h1>🦉 Bubo Reader</h1>
-
-  {% for group, feeds in data %}    
-  <h2>{{ group }}</h2>
-    {% for feed  in feeds %} 
-      <details>
-        <summary>
-          <span class="feed-title">{{ feed.title }}</span> 
-          <span class="feed-url">({{ feed.feed }})</span>
-        </summary>
-        <ul>
-          {% for item in feed.items %}
-            <li>              
-              {{ item.timestamp | formatDate }} - <a href="{{ item.link }}" target='_blank' rel='noopener norefferer nofollow'>{{ item.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </details>
-    {% endfor %}
-  {% endfor %}  
-
-  {% if errors | length > 0 %}
-    <h2>Errors</h2>
-    <p>There were errors trying to parse these feeds:</p>
-    <ul>
-    {% for error in errors %}
-      <li>{{ error }}</li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-
-  <hr>
-  <p>
-    Last updated {{ now }}. Powered by <a href="https://github.com/georgemandis/bubo-rss">Bubo Reader</a>, a project by <a href="https://george.mand.is">George Mandis</a>
-  </p>
+            {% if errors | length > 0 %}
+            <h2>Errors</h2>
+            <p>There were errors trying to parse these feeds:</p>
+            <ul>
+                {% for error in errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</main>
+<footer id='footer'>
+    <div class='footer-content'>
+        <p>
+            Last updated {{ now }}. Powered by <a href="https://github.com/georgemandis/bubo-rss">Bubo Reader</a>, a
+            project by <a href="https://george.mand.is">George Mandis</a>
+        </p>
+    </div>
+</footer>
 </body>
 </html>
