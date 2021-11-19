@@ -106,6 +106,9 @@ const getTimestamp = (obj) => {
         contents.feed = feeds[group][index];
         contents.title = getTitle(contents);
         contents.link = getLink(contents);
+        if(contents?.items?.length > 10) {
+          contents.items.length = 10;
+        }
         contentFromAllFeeds[group].push(contents);
 
         // try to normalize date attribute naming

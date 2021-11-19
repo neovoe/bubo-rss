@@ -36,8 +36,9 @@
                 <ul>
                     {% for item in feed.items %}
                     <li class="post-content">
-                        {{ item.timestamp | formatDate }} - <a href="{{ item.link }}" target='_blank'
-                                                               rel='noopener norefferer nofollow'>{{ item.title }}</a>
+                        <span class="details">{{ item.timestamp | formatDate }}</span>
+                        - <span><a href="{{ item.link }}" target='_blank'
+                                   rel='noopener norefferer nofollow'>{{ item.title }}</a></span>
                     </li>
                     {% endfor %}
                 </ul>
