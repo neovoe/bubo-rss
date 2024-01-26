@@ -1,3 +1,6 @@
 node_modules/*
 output/index.html
 output/style-original.css
+public/index.html
+dist/*
+.DS_Store

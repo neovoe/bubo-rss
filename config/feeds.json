@@ -1,27 +1,16 @@
 {
-  "Notification": [
-    "https://rsshub.jova.me/wechat/tgchannel/neewx2tg",
-    "https://rsshub.app/bendibao/news/nj",
-    "https://rsshub.app/bendibao/news/suqian",
-    "https://rsshub.app/bendibao/news/cz",
-    "https://status.dropbox.com/history.rss"
-  ],
   "Product": [
     "https://sspai.com/feed",
-    "https://buttondown.email/producthacker/rss",
-    "https://rsshub.jova.me/sspai/matrix"
+    "https://buttondown.email/producthacker/rss"
   ],
   "Apple": [
     "https://daringfireball.net/feeds/main",
     "https://www.macstories.net/feed/",
-    "https://feedpress.me/512pixels",
-    "https://www.macsparky.com/blog?format=rss",
     "https://mjtsai.com/blog/feed/",
     "https://sixcolors.com/feed/",
     "https://www.macdrifter.com/feeds/rss.xml"
   ],
   "Blogs": [
-    "https://leancrew.com/all-this/feed/",
     "https://inessential.com/xml/rss.xml",
     "https://rob.crabapples.net/feed.xml",
     "https://iam.fahrni.me/feed/json/",
